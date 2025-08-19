@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Service | NewDay</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/jpg" href="images/New-day-market-solution.jpeg">
+</head>
+
+<body class="booking-page">
+
+  <!-- Header -->
+  <header>
+    <div class="container header-flex">
+      <img src="images/New-day-market-solution.jpeg" alt="NewDay Logo" class="logo-img rotating-logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio_public.php">Portfolio</a></li>
+          <li><a href="blogs_public.php">Blog</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Booking Form Section -->
+  <section class="booking-form-section">
+    <div class="container">
+      <h2>Book a Service</h2>
+      <form action="../backend/submit_booking.php" method="POST" class="booking-form">
+        <label>First Name:
+          <input type="text" name="first_name" required>
+        </label>
+        <label>Last Name:
+          <input type="text" name="last_name" required>
+        </label>
+        <label>Contact:
+          <input type="text" name="contact" required>
+        </label>
+        <label>Email:
+          <input type="email" name="email" required>
+        </label>
+        <label>Service:
+          <select name="service" required>
+            <option value="">Select a service</option>
+            <option value="Branding">Branding</option>
+            <option value="Marketing Research $ Strategy">Marketing Research $ Strategy </option>
+            <option value="Marketing Communication">Marketing Communication</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Social Media Management">Social Media Management</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Web Hosting">Web Hosting</option>
+            <option value="Training">Training</option>
+            <option value="Consulting">Consulting</option>
+          </select>
+        </label>
+        <label>Date:
+          <input type="date" name="date" required>
+        </label>
+        <label>Time:
+          <input type="time" name="time" required>
+        </label>
+        <button type="submit" class="btn">Submit Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="portfolio-footer">
+    <div class="container">
+      <p>&copy; 2025 NewDay Marketing Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

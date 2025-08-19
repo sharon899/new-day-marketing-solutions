@@ -1,0 +1,48 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | NewDay Marketing Solutions</title>
+  <link rel="stylesheet" href="styles/dashboard.css" />
+ <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/jpg" href="images/New-day-market-solution.jpeg">
+</head>
+<body>
+
+  <header class="glass-header">
+    <div class="dashboard-container">
+      <button class="dashboard-toggle"><i class="fas fa-bars"></i> Dashboard</button>
+      <nav class="dashboard-menu">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-users"></i> About</a>
+        <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
+        <a href="blogs_public.php"><i class="fas fa-blog"></i> Blog</a>
+        <a href="portfolio_public.php"><i class="fas fa-briefcase"></i> Portfolio</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="dashboard-intro">
+      <h1>Welcome to <span>NewDay Marketing Solutions</span></h1>
+      <p>Choose a section to explore our services and expertise.</p>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.dashboard-toggle');
+    const menu = document.querySelector('.dashboard-menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    window.addEventListener('click', (e) => {
+      if (!e.target.closest('.dashboard-container')) {
+        menu.classList.remove('active');
+      }
+    });
+  </script>
+
+</body>
+</html>

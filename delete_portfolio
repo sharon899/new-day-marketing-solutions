@@ -1,0 +1,16 @@
+<?php
+$host = "localhost";
+$user = "root";
+$password = "";
+$dbname = "newday_solutions";
+$port = 4306;
+$conn = new mysqli($host, $user, $password, $dbname, $port);
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $conn->query("DELETE FROM portfolio WHERE id = $id");
+}
+
+header("Location: admin_portfolio.php");
+exit();
+?>

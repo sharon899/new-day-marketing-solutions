@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | NewDay Marketing Solutions</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/jpg" href="images/New-day-market-solution.jpeg">
+</head>
+<body class="about-page">
+
+  <header>
+    <div class="container header-flex">
+      <img src="images/New-day-market-solution.jpeg" alt="NewDay Logo" class="logo-img rotating-logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio_public.php">Portfolio</a></li>
+          <li><a href="blogs_public.php">Blog</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="contact.php">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero about-hero fade-in">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1>About NewDay Marketing Solutions</h1>
+        <p>Empowering businesses through strategic, data-driven, and innovative marketing solutions.</p>
+        <p>We use cutting-edge techniques and interactive campaigns to help your brand stand out.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder + Mission Section -->
+  <section class="about-dynamic container">
+    <div class="info-slider">
+      <div class="info-slide active">
+        <h3>Our Vision</h3>
+        <p>To be the most trusted partner in building brands that thrive in the digital space.</p>
+      </div>
+      <div class="info-slide">
+        <h3>Our Mission</h3>
+        <p>To provide innovative and results-driven digital marketing and branding solutions.</p>
+      </div>
+      <div class="info-slide">
+        <h3>Data-Driven Insights</h3>
+        <p>We rely on real-time analytics to guide every decision, ensuring your brand stays ahead.</p>
+      </div>
+      <div class="info-slide">
+        <h3>A Team You Can Trust</h3>
+        <p>We are a passionate, creative team that thrives on solving business challenges with design and tech.</p>
+      </div>
+      <div class="info-slide">
+        <h3>Innovation at Our Core</h3>
+        <p>Our strategies blend creativity, data, and emerging tech to keep you competitive.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="core-values container">
+    <h2>What We Value</h2>
+    <div class="values-grid">
+      <div class="value-card" onclick="toggleValue(this)">
+        <h4>Transparency</h4>
+        <p class="value-description">Open communication and clear expectations in every project we handle.</p>
+      </div>
+      <div class="value-card" onclick="toggleValue(this)">
+        <h4>Creativity</h4>
+        <p class="value-description">We break boundaries with original concepts and inspiring design.</p>
+      </div>
+      <div class="value-card" onclick="toggleValue(this)">
+        <h4>Growth</h4>
+        <p class="value-description">We scale businesses by turning marketing into a measurable asset.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Our Team Section -->
+  <section class="our-team container">
+    <h2 class="section-title">Meet Our Team</h2>
+    <div class="team-image-box">
+      <img src="images/our team banner..jpeg" alt="Our Team">
+    </div>
+    
+       <div class="team-grid">
+      <div class="team-card">
+        <img src="images/mercy.jpg" alt="Mercy Odima">
+        <h3>Mercy Odima</h3>
+        <p class="team-role">Founder & Lead Marketing Strategist</p>
+        <p>Mercy is the visionary behind NewDay, combining an MBA in Marketing, a CIM certification, and a Bachelor's in Strategic Management. Her strategies boost client market share and revenue, driving innovation and brand success.</p>
+      </div>
+
+      <div class="team-card">
+        <img src="images/hudson.jpg" alt="Hudson Sireka">
+        <h3>Hudson Sireka</h3>
+        <p class="team-role">Strategist & Consultant</p>
+        <p>Hudson is a lead partner at NewDay Marketing Solutions, with expertise in trade development, financial management, and business strategy. He specializes in market intelligence, policy development, and business growth initiatives. Hudson holds an MBA in Finance and is pursuing a PhD in Business Administration.</p>
+      </div>
+
+      <div class="team-card">
+        <img src="images/sharon.jpg" alt="Sharon Onea">
+        <h3>Sharon Onea</h3>
+        <p class="team-role">Administrator</p>
+        <p>Onea holds a Bachelor degree in Bussiness Information Technology from Murang`a University of Technology. She supports CRM, campaigns, and digital tools while ensuring smooth team operations through adaptability, detail orientation, and a passion for marketing research.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="about-footer">
+    <div class="container">
+      <p>&copy; 2025 NewDay Marketing Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const infoSlides = document.querySelectorAll('.info-slide');
+    let currentIndex = 0;
+    setInterval(() => {
+      infoSlides[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % infoSlides.length;
+      infoSlides[currentIndex].classList.add('active');
+    }, 6000);
+
+    function toggleValue(card) {
+      card.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
